@@ -72,13 +72,38 @@ class _LoginScreenState extends State<LoginScreen> {
       padding: EdgeInsets.symmetric(
         horizontal: DimenConfig.size_24,
       ),
-      child: ThemeTextFieldWidget());
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text(
+            'Username',
+            style: TextStyleConfig.regularTextStyle(
+              fontSize: DimenConfig.textSize_14,
+            ),
+          ),
+          ThemeTextFieldWidget(),
+        ],
+      ));
 
   Widget _buildPasswordTextField() => Container(
       padding: EdgeInsets.symmetric(
         horizontal: DimenConfig.size_24,
       ),
-      child: ThemeTextFieldWidget());
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text(
+            'Password',
+            style: TextStyleConfig.regularTextStyle(
+              fontSize: DimenConfig.textSize_14,
+            ),
+          ),
+          ThemeTextFieldWidget(
+            obscureText: true,
+            maxLines: 1,
+          ),
+        ],
+      ));
 
   Widget _buildButton() => Container(
         child: ThemeButton(

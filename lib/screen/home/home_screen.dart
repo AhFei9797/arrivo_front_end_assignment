@@ -1,6 +1,6 @@
-import 'package:arrivo_frond_end_assignment/bloc/slide_bar_bloc/bloc/slide_bar_bloc.dart';
-import 'package:arrivo_frond_end_assignment/bloc/slide_bar_bloc/event/slide_bar_event.dart';
-import 'package:arrivo_frond_end_assignment/bloc/slide_bar_bloc/state/slide_bar_state.dart';
+import 'package:arrivo_frond_end_assignment/screen/home/bloc/slide_bar_bloc/bloc/slide_bar_bloc.dart';
+import 'package:arrivo_frond_end_assignment/screen/home/bloc/slide_bar_bloc/event/slide_bar_event.dart';
+import 'package:arrivo_frond_end_assignment/screen/home/bloc/slide_bar_bloc/state/slide_bar_state.dart';
 import 'package:arrivo_frond_end_assignment/screen/home/home_body_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
