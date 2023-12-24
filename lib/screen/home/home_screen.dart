@@ -17,6 +17,7 @@ class HomeScreen extends StatelessWidget {
         TreeNode(key: "Category", data: Icons.description)
           ..addAll([
             TreeNode(key: "Post"),
+            TreeNode(key: "Subscriptions"),
           ]),
         TreeNode(key: "Settings", data: Icons.settings),
       ],

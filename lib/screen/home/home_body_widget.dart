@@ -1,4 +1,5 @@
 import 'package:arrivo_frond_end_assignment/screen/post/post_screen.dart';
+import 'package:arrivo_frond_end_assignment/screen/subscription/subscription_screen.dart';
 import 'package:flutter/material.dart';
 
 class HomeBodyWidget extends StatelessWidget {
@@ -21,6 +22,20 @@ class HomeBodyWidget extends StatelessWidget {
         break;
       case 'Post':
         page = PostScreen();
+        break;
+      case 'Subscriptions':
+        page = SubscriptionScreen();
+        break;
+      case 'Settings':
+        page = const Center(
+          child: Text(
+            "Settings Page",
+            style: TextStyle(
+              color: Color(0xFF171719),
+              fontSize: 22,
+            ),
+          ),
+        );
         break;
       default:
         page = const Center(
